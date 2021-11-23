@@ -15,6 +15,8 @@ function app() {
                     });
                 } else {
                     cards.forEach(card => {
+                        card.classList.remove('hide');
+                        card.classList.remove('anime');
                         if (card.dataset[filterName] === btn.dataset.filter) {
                             card.classList.remove('hide');
                             card.classList.remove('anime');
