@@ -1,34 +1,32 @@
 function app() {
-    const buttons = document.querySelectorAll('.button');
-    const cards = document.querySelectorAll('.card');
+    const
+        filters = document.querySelectorAll(".filter"),
+        cards = document.querySelectorAll('.card');
 
-    function filter (category, items) {
-        items.forEach((item) => {
-            const isItemFiltered = !item.classList.contains(category);
-            const isShowAll = category.toLowerCase() === 'all';
-            if (isItemFiltered && !isShowAll) {
-                item.classList.add('anime');
-            } else {
-                item.classList.remove('hide');
-                item.classList.remove('anime');
-            }
-        })
-    }
+    filters.forEach(filter => {
+        let filterName = filter.dataset.filterName;
 
-    buttons.forEach((button) => {
-        button.addEventListener('click', () => {
-            const currentCategory = button.dataset.filter;
-            filter(currentCategory, cards);
-        })
-    })
-
-    cards.forEach((card) => {
-        card.ontransitionend = function () {
-            if (card.classList.contains('anime')) {
-                card.classList.add('hide');
-            }
-        }
-    })
+        filter.querySelectorAll(".button").forEach(btn => {
+            btn.addEventListener("click", function () {
+                if (btn.dataset.filter === "all") {
+                    cards.forEach(card => {
+                        card.classList.remove('hide');
+                        card.classList.remove('anime');
+                    });
+                } else {
+                    cards.forEach(card => {
+                        if (card.dataset[filterName] === btn.dataset.filter) {
+                            card.classList.remove('hide');
+                            card.classList.remove('anime');
+                        } else {
+                            card.classList.add('anime');
+                            card.classList.add('hide');
+                        }
+                    });
+                }
+            });
+        });
+    });
 }
 
 app();

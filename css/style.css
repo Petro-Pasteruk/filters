@@ -25,16 +25,22 @@ body {
     margin-bottom: 48px;
 }
 
+.filters {
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+}
+
 .filter {
     display: flex;
     justify-content: center;
-    max-width: 1024px;
-    margin: 0 auto;
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 .button {
     padding: 12px 24px;
-    margin-right: 18px;
+    margin-right: 20px;
     cursor: pointer;
     color: white;
     text-transform: uppercase;

@@ -11,24 +11,56 @@
 <body>
 
 <header class="header">
-    <div class="filter">
-        <button class="button button_type_all" data-filter="all">All</button>
-        <button class="button button_type_cat" data-filter="cat">Cat</button>
-        <button class="button button_type_dog" data-filter="dog">Dog</button>
-        <button class="button button_type_bird" data-filter="bird">Bird</button>
-    </div>
+    <ul class="filters">
+        <li class="filter" data-filter-name="name">
+            <button class="button button_type_all" data-filter="all">All</button>
+            <button class="button button_type_cat" data-filter="cat">Cat</button>
+            <button class="button button_type_dog" data-filter="dog">Dog</button>
+            <button class="button button_type_bird" data-filter="bird">Bird</button>
+        </li>
+        <li class="filter" data-filter-name="country">
+            <button class="button button_type_all" data-filter="all">All</button>
+            <button class="button button_type_cat" data-filter="ua">Ukraine</button>
+            <button class="button button_type_dog" data-filter="ru">Russian</button>
+            <button class="button button_type_bird" data-filter="pl">Poland</button>
+        </li>
+        <li class="filter" data-filter-name="product">
+            <button class="button button_type_all" data-filter="all">All</button>
+            <button class="button button_type_cat" data-filter="car">Car</button>
+            <button class="button button_type_dog" data-filter="bicycle">Bicycle</button>
+            <button class="button button_type_bird" data-filter="skiing">Skiing</button>
+        </li>
+        <li class="filter" data-filter-name="company">
+            <button class="button button_type_all" data-filter="all">All</button>
+            <button class="button button_type_cat" data-filter="apple">Apple</button>
+            <button class="button button_type_dog" data-filter="facebook">Facebook</button>
+            <button class="button button_type_bird" data-filter="google">Google</button>
+        </li>
+    </ul>
 </header>
 <main class="content">
     <div class="container">
-        <a href="/" class="card cat">Cat</a>
-        <a href="/" class="card dog">Dog</a>
-        <a href="/" class="card bird">Bird</a>
-        <a href="/" class="card dog">Dog</a>
-        <a href="/" class="card cat">Cat</a>
-        <a href="/" class="card bird">Bird</a>
-        <a href="/" class="card bird">Bird</a>
-        <a href="/" class="card dog">Dog</a>
-        <a href="/" class="card cat">Cat</a>
+        <a href="/" class="card cat" data-company="apple" data-product="car" data-country="ua" data-name="cat">Cat</a>
+        <a href="/" class="card dog" data-company="google" data-product="bicycle" data-country="ru" data-name="dog">Dog</a>
+        <a href="/" class="card bird" data-company="facebook" data-product="bicycle" data-country="pl" data-name="bird">Bird</a>
+        <a href="/" class="card dog" data-company="apple" data-product="car" data-country="ua" data-name="dog">Dog</a>
+        <a href="/" class="card cat" data-company="apple" data-product="bicycle" data-country="ua" data-name="cat">Cat</a>
+        <a href="/" class="card bird" data-company="facebook" data-product="skiing" data-country="pl" data-name="bird">Bird</a>
+        <a href="/" class="card bird" data-company="apple" data-product="car" data-country="ua" data-name="bird">Bird</a>
+        <a href="/" class="card dog" data-company="google" data-product="bicycle" data-country="ru" data-name="dog">Dog</a>
+        <a href="/" class="card cat" data-company="apple" data-product="skiing" data-country="ua" data-name="cat">Cat</a>
+        <a href="/" class="card cat" data-company="apple" data-product="car" data-country="ua" data-name="cat">Cat</a>
+        <a href="/" class="card cat" data-company="apple" data-product="car" data-country="ua" data-name="cat">Cat</a>
+        <a href="/" class="card dog" data-company="google" data-product="bicycle" data-country="ru" data-name="dog">Dog</a>
+        <a href="/" class="card bird" data-company="facebook" data-product="bicycle" data-country="pl" data-name="bird">Bird</a>
+        <a href="/" class="card dog" data-company="apple" data-product="car" data-country="ua" data-name="dog">Dog</a>
+        <a href="/" class="card cat" data-company="apple" data-product="bicycle" data-country="ua" data-name="cat">Cat</a>
+        <a href="/" class="card bird" data-company="facebook" data-product="skiing" data-country="pl" data-name="bird">Bird</a>
+        <a href="/" class="card bird" data-company="apple" data-product="car" data-country="ua" data-name="bird">Bird</a>
+        <a href="/" class="card dog" data-company="google" data-product="bicycle" data-country="ru" data-name="dog">Dog</a>
+        <a href="/" class="card cat" data-company="apple" data-product="skiing" data-country="ua" data-name="cat">Cat</a>
+        <a href="/" class="card dog" data-company="google" data-product="bicycle" data-country="ru" data-name="dog">Dog</a>
+        <a href="/" class="card cat" data-company="apple" data-product="car" data-country="ua" data-name="cat">Cat</a>
     </div>
 </main>
 
