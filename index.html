@@ -10,55 +10,76 @@
 </head>
 <body>
 
-<a href="" class="back__btn">Back</a>
+<a href="" class="back__btn button">Back</a>
 
 <header class="header">
     <ul class="filters">
         <li class="filter" data-filter-name="name">
             <button class="button button_type_all" data-filter="all">All</button>
-            <button class="button button_type_cat" data-filter="cat">Cat
+            <button class="button" data-filter="kiev">Киев
                 <input type="radio" name="name">
             </button>
-            <button class="button button_type_dog" data-filter="dog">Dog
+            <button class="button" data-filter="kharkov">Харьков
                 <input type="radio" name="name">
             </button>
-            <button class="button button_type_bird" data-filter="bird">Bird
+            <button class="button" data-filter="dnipro">Днипро
                 <input type="radio" name="name">
             </button>
         </li>
         <li class="filter" data-filter-name="country">
             <button class="button button_type_all" data-filter="all">All</button>
-            <button class="button button_type_cat" data-filter="ua">Ukraine
+            <button class="button button_type_cat" data-filter="epam">Epam
                 <input type="radio" name="country">
             </button>
-            <button class="button button_type_dog" data-filter="ru">Russian
+            <button class="button button_type_dog" data-filter="softserve">Softserve
                 <input type="radio" name="country">
             </button>
-            <button class="button button_type_bird" data-filter="pl">Poland
+            <button class="button button_type_bird" style="background: green;" data-filter="globallogic">Globallogic
+                <input type="radio" name="country">
+            </button>
+            <button class="button button_type_bird" data-filter="nix">Nix
+                <input type="radio" name="country">
+            </button>
+            <button class="button button_type_bird" style="background: orange;" data-filter="intetics">Intetics
+                <input type="radio" name="country">
+            </button>
+            <button class="button button_type_bird" style="background: red;" data-filter="dataart">Dataart
                 <input type="radio" name="country">
             </button>
         </li>
         <li class="filter" data-filter-name="product">
             <button class="button button_type_all" data-filter="all">All</button>
-            <button class="button button_type_cat" data-filter="car">Car
+            <button class="button" data-filter="intramural">Очная
                 <input type="radio" name="product">
             </button>
-            <button class="button button_type_dog" data-filter="bicycle">Bicycle
+            <button class="button" data-filter="absentia">Заочная
                 <input type="radio" name="product">
             </button>
-            <button class="button button_type_bird" data-filter="skiing">Skiing
+            <button class="button" data-filter="online">Онлайн
                 <input type="radio" name="product">
             </button>
         </li>
         <li class="filter" data-filter-name="company">
             <button class="button button_type_all" data-filter="all">All</button>
-            <button class="button button_type_cat" data-filter="apple">Apple
+            <button class="button" data-filter="free">Бесплатно
                 <input type="radio" name="company">
             </button>
-            <button class="button button_type_dog" data-filter="facebook">Facebook
+            <button class="button" data-filter="1500">1 500 грн.
                 <input type="radio" name="company">
             </button>
-            <button class="button button_type_bird" data-filter="google">Google
+            <button class="button" data-filter="3000">3 000 грн.
+                <input type="radio" name="company">
+            </button>
+            <button class="button" data-filter="5400">5 400 грн.
+                <input type="radio" name="company">
+            </button>
+            <button class="button" data-filter="5500">5 500 грн.
+                <input type="radio" name="company">
+            </button>
+            <button class="button" data-filter="10000">10 000 грн.
+                <input type="radio" name="company">
+            </button>
+            <button class="button" data-filter="15600">15 600 грн.
                 <input type="radio" name="company">
             </button>
         </li>
@@ -66,25 +87,24 @@
 </header>
 <main class="content">
     <div class="container">
-        <a href="/" class="card cat" data-filters="apple car ua cat">Cat Ukraine Car Apple</a>
-        <a href="/" class="card dog" data-filters="google bicycle ru dog">Dog Russian Bicycle Google</a>
-        <a href="/" class="card bird" data-filters="facebook bicycle pl bird">Bird Poland Bicycle Facebook</a>
-        <a href="/" class="card dog" data-filters="apple car ua dog">Dog Ukraine Car Apple</a>
-        <a href="/" class="card cat" data-filters="apple bicycle ua cat">Cat Ukraine Bicycle Apple</a>
-        <a href="/" class="card bird" data-filters="facebook skiing pl bird">Bird Poland Skiing Facebook</a>
-        <a href="/" class="card bird" data-filters="apple car ua bird">Bird Ukraine Car Apple</a>
-        <a href="/" class="card dog" data-filters="google bicycle ru dog">Dog Russian Bicycle Google</a>
-        <a href="/" class="card cat" data-filters="apple skiing ua cat">Cat Ukraine Skiing Apple</a>
-        <a href="/" class="card cat" data-filters="apple car ua cat">Cat Ukraine Car Apple</a>
-        <a href="/" class="card dog" data-filters="google bicycle ru dog">Dog Russian Bicycle Google</a>
-        <a href="/" class="card bird" data-filters="facebook bicycle pl bird">Bird Poland Bicycle Facebook</a>
-        <a href="/" class="card dog" data-filters="apple car ua dog">Dog Ukraine Car Apple</a>
-        <a href="/" class="card cat" data-filters="apple bicycle ua cat">Cat Ukraine Bicycle Apple</a>
-        <a href="/" class="card bird" data-filters="facebook skiing pl bird">Bird Poland Skiing Facebook</a>
-        <a href="/" class="card bird" data-filters="apple car ua bird">Bird Ukraine Car Apple</a>
-        <a href="/" class="card dog" data-filters="google bicycle ru dog">Dog Russian Bicycle Google</a>
-        <a href="/" class="card cat" data-filters="apple skiing ua cat">Cat Ukraine Skiing Apple</a>
-        <a href="/" class="card cat" data-filters="apple skiing pl cat">Cat Poland Skiing Apple</a>
+        <a href="/" class="card cat" data-filters="kiev kharkov epam online free"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, nobis?</span><span>Киев, Харьков, Онлайн, Бесплатно</span></a>
+        <a href="/" class="card cat" data-filters="kiev epam online free"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, soluta?</span><span>Киев, Епам, Онлайн, Бесплатно</span></a>
+        <a href="/" class="card cat" data-filters="kiev epam online free"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, sit.</span><span>Киев, Епам, Онлайн, Бесплатно</span></a>
+        <a href="/" class="card cat" data-filters="kharkov dnipro epam online free"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, quidem.</span><span>Харьков, Днипро, Епам, Онлайн, Бесплатно</span></a>
+        <a href="/" class="card dog" data-filters="dnipro softserve online free"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, corporis.</span><span>Днипро, SoftServe, Онлайн бесплатно</span></a>
+        <a href="/" class="card dog" data-filters="kiev softserve online free"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, voluptatem?</span><span>Киев, SoftServe, онлайн, бесплатно</span></a>
+        <a href="/" class="card dog" data-filters="kharkov softserve online free"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, magni?</span><span>Харьков, SoftServe, Онлайн бесплатно</span></a>
+        <a href="/" class="card dog" data-filters="kiev softserve online free"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, sed?</span><span>Киев, SoftServe, онлайн, бесплатно</span></a>
+        <a href="/" class="card" style="background: green;" data-filters="kiev kharkov globallogic intramural free"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, voluptas!</span><span>Киев, Харьков, GLOBALLOGIC, Очно, бесплатно</span></a>
+        <a href="/" class="card" style="background: green;" data-filters="dnipro kiev globallogic online free 3000"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, vitae.</span><span>Днипро, Киев, GLOBALLOGIC, Онлайн, 3000 грн.</span></a>
+        <a href="/" class="card bird" data-filters="kharkov nix online free"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, labore!</span><span>Харьков, NIX, онлайн, бесплатно</span></a>
+        <a href="/" class="card bird" data-filters="kharkov nix intramural 5500"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, veniam.</span><span>Харьков, NIX, Очно, 5 500 грн.</span></a>
+        <a href="/" class="card bird" data-filters="kharkov nix absentia 1500"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, temporibus.</span><span>Харьков, NIX, Заочно, 1 500 грн.</span></a>
+        <a href="/" class="card" style="background: orange;" data-filters="kiev intetics online 10000"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, veniam!</span><span>Киев,  INTETICS, Онлайн, 10 000 грн.</span></a>
+        <a href="/" class="card" style="background: orange;" data-filters="kiev kharkov intetics online 15600"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, quos.</span><span>Киев, Харьков  INTETICS, онлайн, 15 600 грн.</span></a>
+        <a href="/" class="card" style="background: orange;" data-filters="kiev dnipro intetics online 5400"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, magnam?</span><span>Киев, Днипро  INTETICS, онлайн, 5 400 грн.</span></a>
+        <a href="/" class="card" style="background: red;" data-filters="dnipro dataart intramural free"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, quis.</span><span>Днипро, DataArt, очно, бесплатно</span></a>
+        <a href="/" class="card" style="background: red;" data-filters="kiev dataart online 5500"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, quibusdam?</span><span>Киев, DataArt, онлайн, 5 500.</span></a>
     </div>
 </main>
 
